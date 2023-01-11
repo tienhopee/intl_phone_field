@@ -23,6 +23,7 @@ class IntlPhoneField extends StatefulWidget {
   /// {@macro flutter.widgets.editableText.readOnly}
   final bool readOnly;
   final FormFieldSetter<PhoneNumber>? onSaved;
+  final ToolbarOptions? toolbarOptions;
 
   /// {@macro flutter.widgets.editableText.onChanged}
   ///
@@ -239,6 +240,7 @@ class IntlPhoneField extends StatefulWidget {
 
   IntlPhoneField({
     Key? key,
+    this.toolbarOptions,
     this.initialCountryCode,
     this.obscureText = false,
     this.textAlign = TextAlign.left,
